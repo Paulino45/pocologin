@@ -5,11 +5,7 @@ body {
     justify-content: center;
     align-items:center;
     height: 80vh;
-    background-image: url('logo_poco.png');
-    background-size:30%;
-    background-position: left;
-    background-repeat: no-repeat;
-    
+   
     
 }
 
@@ -50,7 +46,7 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 5px; /* Remove a margem padrão do h1 */
     font-size: 24px; /* Ajusta o tamanho da fonte */
-    color: #175ef8; /* Cor do texto */
+    color: #0a0a0a; /* Cor do texto */
     width: 100%;
     text-align: center; /* Centraliza o texto dentro do h1 */
 }
