@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secretaria Municipal de Saúde</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<div class="top-header">
+    <div class="header-content">
+        <!-- <img src="logo_poco.png" alt="Logo da Secretaria Municipal de Saúde" style="height: 55px; color:white">-->
+        <h1>Secretaria Municipal de Saúde - Sistema de agendamento de Viagens</h1>
+    </div>
+</div>
+<body>
+   
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <input type="submit" onclick="logar(); return false">
+           
+            <div id="welcomeMessage"></div>
+        </form>
+    </div>
+
+
+    <script>
+
+        function logar(){
+            var login = document.getElementById('username').value;
+            var senha = document.getElementById('password').value;
+
+            if(login == "admin" && senha == "admin"){
+               
+                location.href = "index2.html"
+            }else{
+                alert('Usuário ou senha incorretos');
+            }
+        }
+
+
+    </script>
+</body>
+</html>

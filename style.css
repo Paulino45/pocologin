@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+        display: grid;
+        place-items: center;
+        min-height: 70vh; /* Certifica-se de que o body tenha altura mínima igual à altura da viewport */
+        margin: 0; /* Remove margens padrão */
+    }
+
+    .top-header h1 {
+        margin: 0; /* Remove a margem padrão do h1 */
+        font-size: 24px; /* Ajusta o tamanho da fonte */
+        color: #ffffff; /* Cor do texto */
+        width: 100%;
+        text-align: center; /* Centraliza o texto dentro do h1 */
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        flex-grow: 1; /* Preenche o espaço restante */
+    }
+    
+    .top-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 10px 20px 20px;
+        background-color:rgb(41, 89, 219);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        position: absolute;
+        width: 35%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+form{
+    background: #ffffff;
+    max-width: 800px;
+    height: 400px;
+    padding: 8px;
+    
+}
+
+.form-container {
+    display: grid;
+    place-items: center;
+    height: 85vh;
+}
+
+form .input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+form .input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #808080;
+}
+
+form .input-single .input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #808080;
+    padding: 5px;
+    outline: 0;
+    font-size: 16px;
+    text-transform: lowercase;
+
+}
+
+form .input-single .input:focus{
+    border-bottom: 2px solid #2D5966;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-25px);
+    font-size: 12px;
+    color: #2D5966;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #2D5966;
+    color: #fff;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+#login-screen {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.input-single label,
+.input-single input {
+    display: block;
+    margin-bottom: 10px;
+}
