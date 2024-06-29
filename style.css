@@ -17,7 +17,7 @@ body {
     .top-header h1 {
         margin: 0; /* Remove a margem padrão do h1 */
         font-size: 24px; /* Ajusta o tamanho da fonte */
-        color: #ffffff; /* Cor do texto */
+        color: hwb(212 7% 31%); /* Cor do texto */
         width: 100%;
         text-align: center; /* Centraliza o texto dentro do h1 */
     }
@@ -33,7 +33,7 @@ body {
         top: 0;
         width: 100%;
         padding: 10px 20px 20px;
-        background-color:rgb(41, 89, 219);
+        background-color:#f8f8f8;
         z-index: 100;
         display: flex;
         justify-content: center;
@@ -94,7 +94,7 @@ form .input-single .input:focus ~ label,
 form .input-single .input:valid ~ label{
     transform: translateY(-25px);
     font-size: 12px;
-    color: #2D5966;
+    color: #0d1e24;
 }
 
 .btn{
